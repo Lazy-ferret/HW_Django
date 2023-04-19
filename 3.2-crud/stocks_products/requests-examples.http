@@ -7,7 +7,7 @@ POST {{baseUrl}}/products/
 Content-Type: application/json
 
 {
-  "title": "Помидор",
+  "title": "Помидор7",
   "description": "Лучшие помидоры на рынке"
 }
 
@@ -46,13 +46,9 @@ POST {{baseUrl}}/stocks/
 Content-Type: application/json
 
 {
-  "address": "мой адрес не дом и не улица, мой адрес сегодня такой: www.ленинград-спб.ru3",
+  "address": "www.ленинград-спб",
   "positions": [
-    {
-      "product": 2,
-      "quantity": 250,
-      "price": 120.50
-    },
+    
     {
       "product": 3,
       "quantity": 100,
@@ -64,7 +60,7 @@ Content-Type: application/json
 ###
 
 # обновляем записи на складе
-PATCH {{baseUrl}}/stocks/4/
+PATCH {{baseUrl}}/stocks/5/
 Content-Type: application/json
 
 {
@@ -72,11 +68,11 @@ Content-Type: application/json
     {
       "product": 2,
       "quantity": 100,
-      "price": 130.80
+      "price": 120.80
     },
     {
       "product": 3,
-      "quantity": 243,
+      "quantity": 21,
       "price": 145
     }
   ]
