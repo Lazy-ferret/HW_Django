@@ -22,7 +22,6 @@ class StockSerializer(serializers.ModelSerializer):
         model = Stock
         fields = ['id', 'address', 'positions']
 
-
     def _update_or_create_positions(self, stock, positions):
         for position in positions:
             StockProduct.objects.update_or_create(
@@ -31,7 +30,6 @@ class StockSerializer(serializers.ModelSerializer):
                 defaults={'quantity': position['quantity'],
                           'price': position['price']}
             )
-
 
     def create(self, validated_data):
         positions = validated_data.pop('positions')
