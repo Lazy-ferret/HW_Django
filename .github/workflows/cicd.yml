@@ -43,10 +43,10 @@ jobs:
           pyhon-version: 3.9
 
       - name: Установка зависимостей
-        run: pip install -r requirements.txt
+        run: pip install -r 3.2-crud/stocks_products/requirements.txt
 
       - name: Линтинг
-        run: flake8 logistic/ --exclude=logistic/migrations
+        run: flake8 3.2-crud/stocks_products/logistic/ --exclude=3.2-crud/stocks_products/logistic/migrations
 
       - name: Тесты
         run: python manage.py test
