@@ -40,7 +40,7 @@ jobs:
       - name: Установка python
         uses: actions/setup-python@v3
         with:
-          pyhon-version: 3.9
+          python-version: 3.9
 
       - name: Установка зависимостей
         run: pip install -r 3.2-crud/stocks_products/requirements.txt
