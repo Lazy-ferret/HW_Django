@@ -67,7 +67,7 @@ jobs:
           host: ${{ secrets.HOST_NAME }}
           username: ${{ secrets.HOST_USER }}
           password: ${{ secrets.HOST_PASSWORD }}
-          script: 
+          script: expect /home/ferret/HW_Django/3.2-crud/stocks_products/deploy.exp
 #          script: |
 #            cd /home/ferret/HW_Django/3.2-crud/stocks_products
 #            git pull origin video
